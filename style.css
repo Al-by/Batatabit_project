@@ -1,0 +1,446 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: #F9F9F9F0;
+    font-family: var(--main-font);
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Variables */
+
+:root{
+    --warn-black: #292724;
+    --dark-warn-black: #201E1C;
+
+    --soft-yellow: #FFE9D4;
+    --warn-yellow: #FFAD64;
+    --dark-warn-yellow: #F7931A;
+
+    --off-gray: #FAF8F7;
+    --main-font: 'DM Sans', sans-serif;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    position: relative;
+    padding: 1rem;
+    padding-top: 3rem;    
+}
+
+header h1{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 3.5rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+header p{
+    color: var(--soft-yellow);
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    padding: 0 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+header a{
+    background-color: var(--off-gray);
+    border-radius: .5rem;
+    position: relative;
+    top: 3.4rem;
+    width: 22.9rem;
+    height: 4.8rem;
+    padding: 1.2rem 1.6rem;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    color: var(--warn-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+header a:hover{
+    color: var(--dark-warn-yellow);
+}
+
+/* Content */
+
+.section1{
+    padding: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6.5rem;
+}
+
+.section1 figure{
+    width: 19.5rem;
+    height: 19.5rem;
+}
+
+.section1 h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--warn-black);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.section1 p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #757575;
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
+.section1 .grid-container{
+    width: 100%;
+    margin-top: 4.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gs{
+    margin: 2rem;
+}
+
+.section1 .grid-container h2{
+    color: #FF9536;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.section1 .grid-container .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    border-radius: .5rem;
+    margin-bottom: 1.6rem;
+}
+
+.section1 .grid-container .grid div{
+    padding: 1rem 1.2rem;
+    display: flex;
+    border-bottom: solid .1rem #F9F9F9F0;    
+}
+
+.section1 .grid-container .grid .coin{
+    color: #B5B0AC;
+    font-size: 1.6rem;
+    border-right: solid .1rem #F9F9F9F0 ;
+    text-align: start;
+}
+
+.section1 .grid-container .grid .price{
+    color: #757575;
+    font-size: 1.4rem;
+}
+
+.section1 .grid-container .grid .price span{
+    margin-left: 1rem;
+}
+
+.section1 .grid-container .update-time{
+    border-radius: .5rem;
+    background-color: var(--soft-yellow);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .8rem;
+    margin: 0 auto;
+}
+
+.section2{
+    position: relative;
+    color: white;
+    background-color: var(--dark-warn-black);
+    padding: 6.4rem 1.7rem 3.2rem 1.6rem;
+}
+
+.section2 > figure{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    top: -1rem;
+}
+
+.section2 > figure img{
+    width: 4rem;
+}
+
+.section2 > h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.section2 > p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #808080;
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.section2 .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section2 .list .list-containers{
+    padding: 1.6rem 1.6rem 2.2rem 1.6rem;
+    background-color: var(--warn-black);
+    border-radius: .3rem;
+    margin: .8rem;
+    max-width: 50rem;
+}
+
+.section2 .list .list-containers > figure{
+    width: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.section2 .list .list-containers > h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section2 .list .list-containers > p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #808080;
+}
+
+.section3{
+    padding: 6.4rem 1.5rem;
+}
+
+.section3 >h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.section3 >p{
+    color: #757575;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.section3 .prices-article{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 1.5rem;
+    padding: 2rem .8rem;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.section3 .prices-article::-webkit-scrollbar {
+    background-color: var(--soft-yellow);
+    height: 3px;
+}
+
+.section3 .prices-article::-webkit-scrollbar-thumb {
+    background-color: var(--dark-warn-yellow);
+  }
+
+.section3 .prices-article .pl{
+    scroll-snap-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 19rem;
+    max-width: 19rem;
+    padding: 2.4rem 2rem;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.section3 .prices-article .pl h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .4rem;
+}
+
+.section3 .prices-article .pl div{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1.6rem;
+}
+
+.section3 .prices-article .pl div span{
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    top: .7rem;
+}
+
+.section3 .prices-article .pl div h1{
+    font-size: 5.2rem;
+    font-weight: 700;
+}
+
+.section3 .prices-article .pl p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #757575;
+    margin-bottom: 1.6rem;
+}
+
+.section3 .prices-article .price2 .tag{
+    position: absolute;
+    top: -1.6rem;
+    text-align: center;
+    background-color: var(--dark-warn-yellow);
+    color: white;
+    padding: .8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+.bit-image{
+    background-image: url(./assets/img/bitcoinbaby.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.bit-image h2{
+    padding-top: 6rem;
+    color: white;
+    font-weight: 700;
+    font-size: 2.4rem;
+
+}
+
+
+
+
+.section3 .prices-article .pl a{
+    display: flex;
+    background-color: #FAF8F7;
+    color: var(--dark-warn-black);
+    border: solid var(--dark-warn-yellow) .2rem;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: fit-content;
+    padding: 1.5rem 1.6rem;
+    align-items: center;
+}
+
+.section3 .prices-article .pl a span img{
+    width: 2.4rem;
+    position: relative;
+    top: .3rem;
+    left: .5rem;
+}
+
+
+
+/* Footer */
+
+footer{
+    background-color: var(--dark-warn-yellow);
+    padding: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li{
+    margin: .6rem 0;
+}
+
+footer ul li a{
+    font-size: 1.4rem;
+}
+
+footer figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer figure img{
+    width: 4.1rem;
+}
+
+footer figure span{
+    font-size: .8rem;
+    color: var(--soft-yellow);
+}
+
+@media (min-width:670px) {
+
+    header figure{
+        margin-top: 2.2rem;
+        width: 17rem;
+    }
+
+    header h1{
+        font-size: 3.5rem;
+    }
+
+    header p{
+        font-size: 1.8rem;
+    }
+
+    .bit-image{
+        background-image: url(./assets/img/bitcoinbaby2x.png);
+    }
+}
